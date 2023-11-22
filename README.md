@@ -24,7 +24,7 @@ Belirli aralıklarla Bitcoin değerlerinde güncellemeleri kontrol etmek üzere 
 
 ### Ön Uç
 
-Ön uç, [Angular/Vue.js/React] kullanılarak geliştirilmiştir. Bitcoin değerlerini bir grafik olarak temsil etmek ve kullanıcılara gün, hafta ve ay sırasına koyma imkanı sağlar.
+Ön uç, [Angular/HTML/CSS] kullanılarak geliştirilmiştir. Bitcoin değerlerini bir grafik olarak temsil etmek ve kullanıcılara gün, hafta ve ay sırasına koyma imkanı sağlar.
 
 ### Giriş Yapılandırması
 
