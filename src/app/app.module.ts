@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BitcoinGraphComponent } from './components/bitcoin-graph/bitcoin-graph.component';
 import 'chartjs-adapter-moment';
+import { NaviComponent } from './components/navi/navi.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BitcoinGraphComponent
+    BitcoinGraphComponent,
+    NaviComponent
   ],
   imports: [
     BrowserModule,
