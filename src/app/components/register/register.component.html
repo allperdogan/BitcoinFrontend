@@ -1,35 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalibrary - Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        main {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        .form-floating input {
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        a {
+            color: #3498db;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        p {
+            color: #6c757d;
+        }
+    </style>
+</head>
 <body class="text-center">
     <main class="form-signin w-75 m-auto">
         <form [formGroup]="registerForm" class="row g-3">
             <h1 class="h3 mb-3 fw-normal">Kayıt ol</h1>
             <div class="col-12">
                 <div class="form-floating">
+                    <label for="floatingFirstName">İsim</label>
                     <input formControlName="firstName" type="text" class="form-control" id="floatingFirstName" placeholder="First Name">
-                    <label for="floatingFirstName">First Name</label>
+                   
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-floating">
+                    <label for="floatingLastName">Soyisim</label>
                     <input formControlName="lastName" type="text" class="form-control" id="floatingLastName" placeholder="Last Name">
-                    <label for="floatingLastName">Last Name</label>
+                    
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-floating">
-                    <input formControlName="email" type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
                     <label for="floatingEmail">E-Mail</label>
+                    <input formControlName="email" type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                    
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-floating">
-                    <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Parola</label>
+                    <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-floating">
-                    <input formControlName="passwordRepeat" type="password" class="form-control" id="floatingPasswordRepeat" placeholder="Password Repeat">
                     <label for="floatingPasswordRepeat">Parola Tekrar</label>
+                    <input formControlName="passwordRepeat" type="password" class="form-control" id="floatingPasswordRepeat" placeholder="Password Repeat">
+                   
                 </div>
             </div>
 
@@ -40,5 +96,8 @@
             <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
         </form>
     </main>
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>

@@ -1,13 +1,19 @@
-<div>
-    <label for="intervalSelect">Zaman Aralığı:</label>
-    <select id="intervalSelect" [(ngModel)]="selectedInterval" (change)="updateChart(selectedInterval)">
-      <option value="minute">Dakikalık</option>
-      <option value="hour">Saatlik</option>
-      <option value="day">Günlük</option>
-      <option value="week">Haftalık</option>
-      <option value="month">Aylık</option>
-      <option value="year">Yıllık</option>
-    </select>
-  </div>
-  
-  <canvas #myChart width="300" height="150"></canvas>
+<style>
+  .chart-container {
+    margin: 0 50px; /* Sağdan ve soldan 20 piksel boşluk bırakır */
+  }
+</style>
+
+<div class="chart-container">
+  <label for="intervalSelect">Zaman Aralığı:</label>
+  <select id="intervalSelect" [(ngModel)]="selectedInterval" (change)="updateChart(selectedInterval)">
+    <option value="minute">Dakikalık</option>
+    <option value="hour">Saatlik</option>
+    <option value="day">Günlük</option>
+    <option value="week">Haftalık</option>
+    <option value="month">Aylık</option>
+    <option value="year">Yıllık</option>
+  </select>
+
+  <canvas #myChart width="50" height="20"></canvas>
+</div>
